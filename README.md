@@ -13,7 +13,7 @@ $ python3 -m venv .venv
 
 Activate local environment:
 ```
-$ source /Users/anneglienke/Work/101_pytest/.venv/bin/activate
+$ source .venv/bin/activate
 ```
 
 Install dependencies:
