@@ -1,5 +1,7 @@
 ## 1 Purpose of this repo
-The purpose of this repo is to use explore [pytest](https://docs.pytest.org/en/7.3.x/). Tests can be found in [tests](tests).
+The purpose of this repo is mainly to explore [pytest](https://docs.pytest.org/en/7.3.x/). Tests can be found in [tests](tests). 
+
+It also introduces `pre-commit` and some very cool checks that aim to ensure code quality and consistency, using `black`, `ruff` and `mypy`.
 
 ## 2 Running locally
 To run locally, you will need Python 3.11 or newer installed in your local environment. Then, just install the dependencies and execute the `main.py` file:
