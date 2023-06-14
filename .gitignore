@@ -1,0 +1,6 @@
+.venv
+
+# local files
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
