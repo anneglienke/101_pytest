@@ -4,8 +4,8 @@ import logging
 import os
 from cerberus import Validator
 
-INPUT_PATH = ".src/input/orders.jsonl"
-OUTPUT_PATH = ".src/output/"
+INPUT_PATH = "input/orders.jsonl"
+OUTPUT_PATH = "output/"
 OUTPUT_CONFIG = {
     "customers": ["customer_id", "city", "country"],
     "products": ["product_id", "product_name"],
