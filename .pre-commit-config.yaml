@@ -1,0 +1,28 @@
+repos:
+  - repo: local
+    hooks:
+      - id: format-src
+        name: Format src
+        entry: black src
+        language: python
+        pass_filenames: false
+      - id: format-tests
+        name: Format tests
+        entry: black tests
+        language: python
+        pass_filenames: false
+      - id: lint-src
+        name: Lint src
+        entry: ruff src
+        language: python
+        pass_filenames: false
+      - id: lint-tests
+        name: Lint tests
+        entry: ruff tests
+        language: python
+        pass_filenames: false
+      - id: type-check-src
+        name: Type Check src
+        entry: mypy tests
+        language: python
+        pass_filenames: false

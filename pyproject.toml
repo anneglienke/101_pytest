@@ -1,0 +1,51 @@
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
+pythonpath = [
+    ".",
+    "src",
+    "tests",
+]
+
+[tool.ruff]
+line-length=120
+exclude = [
+    ".direnv",
+    ".git",
+    ".mypy_cache",
+    "pytype",
+    ".ruff_cache",
+    ".venv",
+    "venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "*.json",
+]
+
+[tool.black]
+line-lenght=120
+
+[tool.mypy]
+ignore_missing_imports=true
+exclude=[
+    ".mypy_cache/"
+]
+
+[[tool.mypy.overrides]]
+module="src.*"
+no_implicit_optional=false
+disable_error_code=[
+    "import",
+]
+
+[[tool.mypy.overrides]]
+module="tests.*"
+no_implicit_optional=false
+disable_error_code=[
+    "import",
+    "union-attr"
+]
