@@ -1,6 +1,7 @@
-from src.main import deleteOutputFiles
 import os
 import pytest
+
+from src.main import deleteOutputFiles
 
 
 def test_deleteOutputFiles(tmp_path, caplog):
