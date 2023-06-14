@@ -31,6 +31,11 @@ Run script:
 $ python src/main.py
 ```
 
+Run tests:
+```
+$ pytest -v tests
+```
+
 ## 3 What is pre-commit?
 
 `pre-commit` is a framework commonly used to execute code checks and tasks before committing changes to a version control system like Git. It allows developers to define a configuration file specifying various checks such as linters, code formatters, static analyzers, and custom scripts. These checks are run automatically when a commit is made, helping ensure code quality and consistency. If any checks fail, the commit process is interrupted, and errors or warnings are displayed to the developer. Pre-commit provides a practical way to enforce coding standards, catch potential issues early, and maintain a high level of code quality in a project.
