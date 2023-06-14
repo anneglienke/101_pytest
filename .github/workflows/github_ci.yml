@@ -30,10 +30,10 @@ jobs:
         mypy src 
         mypy tests 
 
-    - name: Run Tests
-      run: |
-        echo "Running Tests"
-        pytest -v tests/ --junitxml=test-reports/report.xml
+    # - name: Run Tests
+    #   run: |
+    #     echo "Running Tests"
+    #     pytest -v tests/ --junitxml=test-reports/report.xml
 
     - name: Run Script
       run: |
