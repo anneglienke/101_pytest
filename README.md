@@ -1,7 +1,7 @@
 ## 1 Purpose of this repo
 The purpose of this repo is mainly to explore [pytest](https://docs.pytest.org/en/7.3.x/). Tests can be found in [tests](tests). 
 
-It also introduces `pre-commit` and some very cool checks that aim to ensure code quality and consistency, using `black`, `ruff` and `mypy`.
+It also introduces [pre-commit](https://pre-commit.com/) and some very cool checks/formatting that aim to ensure code quality and consistency, using [black](https://pypi.org/project/black/), [ruff](https://pypi.org/project/ruff/0.0.89/) and [mypy](https://mypy.readthedocs.io/en/stable/).
 
 ## 2 Running locally
 To run locally, you will need Python 3.11 or newer installed in your local environment. Then, just install the dependencies and execute the `main.py` file:
