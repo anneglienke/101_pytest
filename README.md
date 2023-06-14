@@ -26,7 +26,7 @@ $ pre-commit install
 
 Run script:
 ```
-$ python ./main.py
+$ python src/main.py
 ```
 
 ## 3 What is pre-commit?
