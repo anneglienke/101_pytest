@@ -1,0 +1,40 @@
+name: CI pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+
+  pipeline_name:
+    name: Pipeline
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3.2.0
+
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+
+    - name: Run Static Analysis
+      run: |
+        echo "Formatting code"
+        black src 
+        black tests 
+        echo "Linting code"
+        ruff src 
+        ruff tests 
+        echo "Running static analysis"
+        mypy src 
+        mypy tests 
+
+    - name: Run Tests
+      run: |
+        echo "Running Tests"
+        pytest -v tests/ --junitxml=test-reports/report.xml
+
+    - name: Run Script
+      run: |
+        python ./main.py
