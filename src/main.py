@@ -78,7 +78,7 @@ logging.basicConfig(format="[%(asctime)s] %(message)s", level=logging.INFO)
 
 
 # Use a Cerberus to validate dicts according to ORDER_SCHEMA
-def validateObjects(order: dict):
+def validateObjects(order):
     v = Validator(ORDER_SCHEMA)
     return v.validate(order), v.errors
 
