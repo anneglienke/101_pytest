@@ -8,36 +8,36 @@ To run locally, you will need Python 3.11 or newer installed in your local envir
 
 Create a virtual environment:
 ```
-$ python3 -m venv .venv
+python3 -m venv .venv
 ```
 
 Activate local environment:
 ```
-$ source .venv/bin/activate
+source .venv/bin/activate
 ```
 
 Install dependencies:
 ```
-$ pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 Install git hooks
 ```
-$ pre-commit install
+pre-commit install
 ```
 
 Run script:
 ```
-$ python src/main.py
+python src/main.py
 ```
 
 Run tests:
 ```
-$ pytest -v tests
+pytest -v tests
 ```
 Run test coverage command to generate report locally:
 ```
-$ pytest --cov --cov-report=html
+pytest --cov --cov-report=html
 ```
 
 ## 3 What is pre-commit?
