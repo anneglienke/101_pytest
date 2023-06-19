@@ -38,7 +38,7 @@ jobs:
     - name: Generate Test Coverage Report
       run: |
         echo "Generating Test Coverage Report"
-        pytest --cov --cov-report=test-reports/coverage-report.html
+        pytest --cov --cov-report=html:test-reports/coverage-report.html
 
     - name: Run Script
       run: |
