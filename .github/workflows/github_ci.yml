@@ -33,7 +33,7 @@ jobs:
     - name: Run Tests
       run: |
         echo "Running Tests"
-        pytest -v tests/* --html=test-reports/tests-report.html
+        pytest -v tests
 
     - name: Generate Test Coverage Report
       run: |
