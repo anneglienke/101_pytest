@@ -35,6 +35,10 @@ Run tests:
 ```
 $ pytest -v tests
 ```
+Run test coverage command to generate report locally:
+```
+$ pytest --cov --cov-report=html
+```
 
 ## 3 What is pre-commit?
 
