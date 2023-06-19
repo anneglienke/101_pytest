@@ -1,4 +1,4 @@
-## Types of tests covered in this project (in progress...)
+## Types of tests covered by this project (in progress...)
 
 `Unit Test`: verifies the functionality of individual components or units within the data pipeline. It focuses on testing specific functions, transformations, or modules in isolation.
 
