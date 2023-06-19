@@ -33,8 +33,19 @@ jobs:
     - name: Run Tests
       run: |
         echo "Running Tests"
-        pytest -v tests/* --junitxml=test-reports/report.xml
+        pytest -v tests/* --html=test-reports/tests-report.html
+
+    - name: Generate Test Coverage Report
+      run: |
+        echo "Generating Test Coverage Report"
+        pytest --cov --cov-report=test-reports/coverage-report.html
 
     - name: Run Script
       run: |
         python src/main.py
+
+    - name: Archive code coverage results
+      uses: actions/upload-artifact@v3
+      with:
+        name: code-coverage-report
+        path: output/test-reports/*.html

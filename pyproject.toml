@@ -5,7 +5,6 @@ addopts = [
 pythonpath = [
     ".",
     "src",
-    "tests",
 ]
 
 [tool.ruff]
@@ -49,3 +48,16 @@ disable_error_code=[
     "import",
     "union-attr"
 ]
+
+[tool.coverage.run]
+branch = true
+source = ["src"]
+omit = ["/opt/homebrew/","tests/"] 
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = false
+
+[tool.coverage.html]
+directory = "test-reports"
+title = "Test Coverage Report"
