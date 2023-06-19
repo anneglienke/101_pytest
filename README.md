@@ -28,7 +28,7 @@ pre-commit install
 
 Run script:
 ```
-python src/main.py
+python3 src/main.py
 ```
 
 Run tests:
