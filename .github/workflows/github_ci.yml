@@ -33,7 +33,7 @@ jobs:
     - name: Run Tests
       run: |
         echo "Running Tests"
-        pytest -v tests
+        pytest -v tests/ --junitxml=test-reports/tests_report.xml
 
     - name: Generate Test Coverage Report
       run: |
