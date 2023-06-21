@@ -1,17 +1,36 @@
-## Types of tests covered by this project (in progress...)
+## Tests/checks/monitors covered by this project (in progress...)
 
-`Unit Test`: verifies the functionality of individual components or units within the data pipeline. 
-It focuses on testing specific functions, transformations, or modules in isolation.
+</br>
 
-`Integration Test`: ensures that different components of the data pipeline work together correctly. 
-It validates the interaction and compatibility between various stages or modules of the pipeline.
+### 1 Unit Test
+Verifies the functionality of individual components or units within the data pipeline. It focuses on testing specific functions, transformations, or modules in isolation. </br>
+Example: [unit tests](/tests/unit)
 
-`Data Validation Test`: ensures that the data pipeline adheres to predefined rules, constraints, or expectations. 
-It validatese data against defined schemas, formats, or business rules to maintain data integrity.
+</br>
 
-`Error Handling Test`: verifies how the data pipeline handles errors, exceptions, or unexpected scenarios. 
-It checks if appropriate error messages are generated, and error recovery mechanisms are in place.
+#### 1.1 Error Handling Test
+Verifies how the data pipeline handles errors, exceptions, or unexpected scenarios. It checks if appropriate error messages are generated, and error recovery mechanisms are in place.
 
-`Data Quality Test`: verifies the quality, accuracy, and completeness of the data flowing through the pipeline. 
-It checks for anomalies, inconsistencies, missing values, or data integrity issues.
+</br>
+
+#### 1.2 Data Validation Test
+Ensures that the data pipeline adheres to predefined contracts: rules, constraints, or expectations. It validates data against defined schemas, formats, or business rules to maintain data integrity. </br>
+Example: 
+- [test_loadData](unit/data_validation/test_loadData.py) ensures the function `loadData()` creates the output files and validates their schema.
+- [test_validator](unit/data_validation/test_validator.py) unit tests the function `validator()`, checking if it deals with valid and invalid inputs correctly. In [main.py](src/main.py), the same function is used to monitor inputs in run time.
+
+</br>
+
+### 2 Integration Test
+Ensures that different components of the data pipeline work together correctly. It validates the interaction and compatibility between various stages or modules of the pipeline.
+
+</br>
+
+## Not covered
+
+</br>
+
+### Data Quality Monitoring 
+Verifies the quality, accuracy, and completeness of the data flowing through the pipeline. 
+It checks for anomalies, inconsistencies, missing values, or data integrity issued in run time.
 
