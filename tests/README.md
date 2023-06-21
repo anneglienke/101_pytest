@@ -4,7 +4,9 @@
 
 ### 1 Unit Test
 Verifies the functionality of individual components or units within the data pipeline. It focuses on testing specific functions, transformations, or modules in isolation. </br>
-Example: [unit tests](/tests/unit)
+Example: 
+- [test_deleteOutputFile](tests/unit/test_deleteOutputFile.py)
+- [test_transformOrdersList](tests/unit/test_transformOrdersList.py)
 
 </br>
 
@@ -31,6 +33,5 @@ Ensures that different components of the data pipeline work together correctly. 
 </br>
 
 ### Data Quality Monitoring 
-Verifies the quality, accuracy, and completeness of the data flowing through the pipeline. 
-It checks for anomalies, inconsistencies, missing values, or data integrity issued in run time.
+Verifies the quality, accuracy, and completeness of the data flowing through the pipeline. It checks for anomalies, inconsistencies, missing values, or data integrity issued in run time.
 
