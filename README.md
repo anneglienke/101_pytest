@@ -40,19 +40,5 @@ Run test coverage command to generate report locally:
 pytest --cov --cov-report=html
 ```
 
-## 3 What is pre-commit?
 
-`pre-commit` is a framework commonly used to execute code checks and tasks before committing changes to a version control system like Git. It allows developers to define a configuration file specifying various checks such as linters, code formatters, static analyzers, and custom scripts. These checks are run automatically when a commit is made, helping ensure code quality and consistency. If any checks fail, the commit process is interrupted, and errors or warnings are displayed to the developer. Pre-commit provides a practical way to enforce coding standards, catch potential issues early, and maintain a high level of code quality in a project.
-
-To use `pre-commit`in your projects, don't forget to configure the [pre-commit config file](.pre-commit-config.yaml) and the [pyproject.toml](pyproject.toml). 
-
-The `pyproject.toml` file is used as a configuration file that specifies various settings and dependencies for the project (metadata, build configurations, and tool settings).
-
-### 3.1 What is it checking?
-
-`black` = automatically formats code to adhere to a consistent style guide, known as "black formatting." By applying opinionated rules, Black helps ensure that code has a consistent layout, making it easier to read and maintain. 
-
-`ruff` = analyzes a program's source code to detect various problems such as syntax errors, programming mistakes, style violations, and so on.
-
-`mypy` = analyzes the types of variables, expressions, and function signature  correctly for potential type errors before runtime. By using type hints, Mypy can catch common programming mistakes, improve code quality, and provide better editor autocompletion and documentation. 
 
