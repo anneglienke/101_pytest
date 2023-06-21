@@ -23,6 +23,11 @@ repos:
         pass_filenames: false
       - id: type-check-src
         name: Type Check src
+        entry: mypy src
+        language: python
+        pass_filenames: false
+      - id: type-check-tests
+        name: Type Check tests
         entry: mypy tests
         language: python
         pass_filenames: false
