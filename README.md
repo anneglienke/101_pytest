@@ -40,5 +40,8 @@ Run test coverage command to generate report locally:
 pytest --cov --cov-report=html
 ```
 
-
+To skip pre-commit checks, run:
+````
+git commit -m"message" --no-verify
+```
 

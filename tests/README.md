@@ -18,8 +18,8 @@ Verifies how the data pipeline handles errors, exceptions, or unexpected scenari
 #### 1.2 Data Validation Test
 Ensures that the data pipeline adheres to predefined contracts: rules, constraints, or expectations. It validates data against defined schemas, formats, or business rules to maintain data integrity. </br>
 Example: 
-- [test_loadData](unit/data_validation/test_loadData.py) ensures the function `loadData()` creates the output files and validates their schema.
-- [test_validator](unit/data_validation/test_validator.py) unit tests the function `validator()`, checking if it deals with valid and invalid inputs correctly. In [main.py](src/main.py), the same function is used to monitor inputs in run time.
+- [test_loadData](tests/unit/test_loadData.py) ensures the function `loadData()` creates the output files and validates their schema.
+- [test_validator](tests/unit/test_validator.py) unit tests the function `validator()`, checking if it deals with valid and invalid inputs correctly. In [main.py](src/main.py), the same function is used to monitor inputs in run time.
 
 </br>
 
