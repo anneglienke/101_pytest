@@ -5,8 +5,8 @@
 ### 1 Unit Test
 Verifies the functionality of individual components or units within the data pipeline. It focuses on testing specific functions, transformations, or modules in isolation. </br>
 Example: 
-- [test_deleteOutputFile](tests/unit/test_deleteOutputFile.py)
-- [test_transformOrdersList](tests/unit/test_transformOrdersList.py)
+- [test_deleteOutputFile](unit/test_deleteOutputFile.py)
+- [test_transformOrdersList](unit/test_transformOrdersList.py)
 
 </br>
 
@@ -18,8 +18,8 @@ Verifies how the data pipeline handles errors, exceptions, or unexpected scenari
 #### 1.2 Data Validation Test
 Ensures that the data pipeline adheres to predefined contracts: rules, constraints, or expectations. It validates data against defined schemas, formats, or business rules to maintain data integrity. </br>
 Example: 
-- [test_loadData](tests/unit/test_loadData.py) ensures the function `loadData()` creates the output files and validates their schema.
-- [test_validator](tests/unit/test_validator.py) unit tests the function `validator()`, checking if it deals with valid and invalid inputs correctly. In [main.py](src/main.py), the same function is used to monitor inputs in run time.
+- [test_loadData](unit/test_loadData.py) ensures the function `loadData()` creates the output files and validates their schema.
+- [test_validator](unit/test_validator.py) unit tests the function `validator()`, checking if it deals with valid and invalid inputs correctly. In [main.py](src/main.py), the same function is used to monitor inputs in run time.
 
 </br>
 
