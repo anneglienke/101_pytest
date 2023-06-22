@@ -6,11 +6,13 @@ from cerberus import Validator
 
 INPUT_PATH = "src/input/orders.jsonl"
 OUTPUT_PATH = "src/output/"
+
 OUTPUT_CONFIG = {
     "customers": ["customer_id", "city", "country"],
     "products": ["product_id", "product_name"],
     "order_items": ["order_id", "customer_id", "product_id", "quantity", "price_gbp"],
 }
+
 ORDERS_SCHEMA = {
     "order_id": {
         "type": "integer",
