@@ -23,6 +23,10 @@ def test_deleteOutputFiles(tmp_path):
     assert not file2.exists()
     assert not file3.exists()
 
+    # Delete output directory and assert it does not exist
+    output_dir.rmdir()
+    assert not output_dir.exists()
+
 
 @pytest.mark.xfail(reason="Test fails due to missing output directory")
 def test_deleteOutputFiles_xfail():
