@@ -9,16 +9,15 @@ To ensure code quality, this repository leverages the capabilities of pre-commit
 
 | Content                  | Description |
 | ------                   | ------ |
-| [images]()               | folder with the images used on readme |
-| [docker-compose.yml]()   | docker-compose file |
-| [Dockerfile]()           | dockerfile |
-| [push.py]()              | script that pulls data from SentiCrypt API and pushes it to Stitch Import API |
-| [query_validation.sql]() | validation queries to check on empty, null and duplicated values |
-| [requirements.txt]()     | requirements to run push.py|
+| [src](src)               | ETL script, input, and output datasets serving as a foundation for writing focused tests. |
+| [tests](tests)             | Tests - Go to [tests/README.md](tests/README.md) for more details on what's covered by this repo. |
+| [tests/unit](tests/unit)        | Unit tests|
+| [tests/integration](tests/integration) | Integration tests|
+| [github_ci](.github/workflows/github_ci.yml)     | Workflow that runs static analysis, the script, the tests and generates test reports and test coverage report|
 
 <br />
 
-## 2 Running locally
+## 2 Running it locally
 To run locally, you will need Python 3.11 or newer installed in your local environment. Then, just install the dependencies and execute the `main.py` file:
 
 Create a virtual environment:
