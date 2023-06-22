@@ -6,7 +6,7 @@ import shutil
 
 from src.main import loadData
 
-OUTPUT_PATH = "tests/unit/data_validation/output/"
+OUTPUT_PATH = "tests/unit/output/"
 OUTPUT_CONFIG = {
     "customers": ["customer_id", "city", "country"],
     "products": ["product_id", "product_name"],
