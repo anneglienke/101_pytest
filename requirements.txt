@@ -6,4 +6,4 @@ black==23.3.0
 ruff==0.0.260
 pre-commit==3.2.1
 coverage==7.2.7
-pytest-cov
+pytest-cov==4.1.0
